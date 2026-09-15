@@ -36,4 +36,7 @@ you want to avoid. The skill uses this only to RANK the issues your
 rubric accepts, never to change a verdict: fit cannot rescue an issue
 your rubric rejects, and cannot sink one it accepts. -->
 
-(Write a few sentences here.)
+I'm a full-stack software engineer with frontend, backend, database, cybersecurity and applied AI engineering experience.
+I'm familiar with python, javascript, typescript, react, express, node, flask, sqlite, mysql, supabase, java, c++, html, css, ruby, streamlit, gradio, openrouter, claude code.
+I'm willing to learn other languages/tools/technologies as well.
+I don't want to contribute to documentation issues.
