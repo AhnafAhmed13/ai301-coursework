@@ -34,7 +34,7 @@ will fail eval issues designed around that family.
 
 | Check | Evidence | Pass condition | Weight |
 |---|---|---|---|
-| Recent default-branch commits | Repo facts > last 5 default-branch commits > dates | last default-branch commit was made within  60 days | preferred |
+| Recent default-branch commits | Repo facts > last 5 default-branch commits > dates | last default-branch commit was made within 60 days | preferred |
 | Who is committing | Repo facts > last 5 default-branch commits > author names | not all commits were made by bots (username ending in [bot]) | preferred |
 | Issue response latency | Repo facts > maintainer first-response sample | last issue opened was within 180 days & average response time < 60 days (if available) | required |
 | Maintainer activity in this thread | Comments | at least 1 comment from Owner, Member, or Collaborator | preferred |
