@@ -36,21 +36,21 @@ will fail eval issues designed around that family.
 |---|---|---|---|
 | Recent default-branch commits | Repo facts > last 5 default-branch commits > dates | last default-branch commit was made within  60 days | preferred |
 | Who is committing | Repo facts > last 5 default-branch commits > author names | not all commits were made by bots (username ending in [bot]) | preferred |
-| Issue response latency | Repo facts > maintainer first-response sample | last issue opened was within 180 days & average response time < 30 days | required |
+| Issue response latency | Repo facts > maintainer first-response sample | last issue opened was within 180 days & average response time < 60 days (if available) | required |
 | Maintainer activity in this thread | Comments | at least 1 comment from Owner, Member, or Collaborator | preferred |
-| Release recency | Repo facts > latest release > date | last release was within 180 days | required |
+| Release recency | Repo facts > latest release > date | last release was within 180 days (if published) | required |
 | Last push | Repo facts > last push to any branch | last push was within 30 days | preferred |
 | Archived flag | Repo facts > repo > archived | repo is not archived | required |
 | Adoption scale | Repo facts > repo > stars | repo has 100+ stars | preferred |
 | Issue availability | Issue > state | issue is open | required |
 | Newcomer friendly | Issue > labels | labels contains 'good first issue' | preferred |
-| Issue scope | Issue | not an umbrella or tracking issue | required |
+| Issue scope | Issue | not an umbrella or tracking issue & doesn't mention "Out of scope" | required |
 | Issue description | Issue | has acceptance-criteria checklist, reproduction steps and/or suggested fix | preferred |
 | Non pure usage question | Issue | not a support request | required |
 | Age and history | Issue > date | issue was opened within last 2 years | preferred |
 | Asignee | Repo facts > this issue > asignee | issue is not assigned to anyone | preferred |
 | Linked PRs | Repo facts > this issue > linked PRs & Comments > PR mentions | issue has no linked PRs | preferred |
-| Claim comments | Comments | no claim comment within last 90 days and/or no reply or acknowledgement from maintainers | preferred |
+| Claim comments | Comments | no claim comment within last 90 days and/or no reply or acknowledgement from maintainers | required |
 | Label freshness | Issue open date vs capture date | label is within 180 days | preferred |
 | Contribution policy | Repo facts > contribution policy | allows AI-assisted contribution | preferred |
 | Dedicated AI policy files | Repo facts > contribution policy | has dedicated AI policy | preferred |
