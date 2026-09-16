@@ -36,7 +36,7 @@ will fail eval issues designed around that family.
 |---|---|---|---|
 | Recent default-branch commits | Repo facts > last 5 default-branch commits > dates | last default-branch commit was made within  60 days | preferred |
 | Who is committing | Repo facts > last 5 default-branch commits > author names | not all commits were made by bots (username ending in [bot]) | preferred |
-| Issue response latency | Repo facts > maintainer first-response sample | last issue opened was within 180 days & average response time < 28 days | required |
+| Issue response latency | Repo facts > maintainer first-response sample | last issue opened was within 180 days & average response time < 30 days | required |
 | Maintainer activity in this thread | Comments | at least 1 comment from Owner, Member, or Collaborator | preferred |
 | Release recency | Repo facts > latest release > date | last release was within 180 days | required |
 | Last push | Repo facts > last push to any branch | last push was within 30 days | preferred |
