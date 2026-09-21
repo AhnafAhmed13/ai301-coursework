@@ -34,6 +34,8 @@ https://github.com/codepath/pathreview-ai301-fa26-s1/issues/70#issuecomment-5757
 
 Hey, I'm a TF from CodePath's AI 301 course. I'd like to take on this issue as part of the TF weekly prep task. Looking at the sample_readme_text() in tests/conftest.py, test_parse_standard_readme() in tests/unit/test_readme_parser.py, and parse() in ingestion/parsers/readme_parser.py, it appears that the pytest fixture is returning a sample readme text as a string with indentation which is causing the parser to miscount heading_count as 0. I will reproduce the bug locally using pytest and report back what I find.
 
+---
+
 **Reproduction comment**
 
 [Link to the comment where you posted your reproduction. It must record the environment
@@ -94,6 +96,8 @@ should have `heading_count` > 0 in `test_parse_standard_readme()` in `tests/unit
 ## Actual behavior
 
 The same input fails in `assert result.metadata["heading_count"] > 0` in `test_parse_standard_readme()` in `tests/unit/test_readme_parser.py`
+
+---
 
 ## Eval iterations
 
