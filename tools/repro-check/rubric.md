@@ -44,10 +44,10 @@ packages designed around that family.
 | Check | Evidence | Pass condition | Weight |
 |---|---|---|---|
 | Environment record | references/evidence-guide.md > Environment | candidate claim comment OR candidate repro report includes environment record AND matches the issue body environment (OR addresses discrepancy with valid explanation) | required |
-| Reproduction steps | references/evidence-guide.md > Steps | candidate claim comment OR candidate repro report includes steps taken to reproduce the issue (AND candidate steps match the issue steps, if available; OR states cannot reproduce) | preferred |
-| Expected vs actual behavior | references/evidence-guide.md > Behavior shown | candidate claim comment OR candidate repro report includes expected vs actual behavior (AND candidate behaviors match the issue behaviors, if available) | preferred |
+| Reproduction steps | references/evidence-guide.md > Steps | candidate claim comment OR candidate repro report includes steps taken to reproduce the issue (AND candidate steps match the issue steps exactly, if available; OR states cannot reproduce) | preferred |
+| Expected vs actual behavior | references/evidence-guide.md > Behavior shown | candidate claim comment OR candidate repro report includes expected vs actual behavior (AND candidate behaviors match the issue behaviors exactly, if available) | preferred |
 | Reproduces the proper bug | references/evidence-guide.md > Honesty | candidate claim comment AND candidate repro report reproduces the bug addressed in the issue AND doesn't go out of scope | required |
-| Communication | references/evidence-guide.md > Comms | Candidate claim comment AND candidate repro report follows the repo's conventions and uses formal and friendly language with respectful tone | required |
+| Communication | references/evidence-guide.md > Comms | Candidate claim comment AND candidate repro report follows the repo's conventions and uses formal and friendly language with respectful tone AND if the repo has AI disclosure policy, candidate discloses it | required |
 
 
 ## Verdict rule
