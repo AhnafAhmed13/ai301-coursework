@@ -15,7 +15,7 @@ wrong label is not graded.
 
 **Issue link**
 
-https://github.com/codepath/pathreview-ai301-fa26-s1/issues/68
+https://github.com/codepath/pathreview-ai301-fa26-s1/issues/70
 
 **Verdict output**
 
@@ -28,36 +28,90 @@ rubric rather than about the issues: revise it and re-run — retries are unlimi
 partial re-run costs about $0.20 — or run the skill on different candidates. Output
 recording `reject` for the issue you chose earns no credit for this field.
 
+
+Grading: Issue #70 — "README parser test fixture is indented, so it contains no headings"
+
+┌─────────────────────────┬───────────┬─────────┬────────────────────────────────────────────────────────────────────┐
+│          Check          │  Weight   │  Grade  │                              Evidence                              │
+├─────────────────────────┼───────────┼─────────┼────────────────────────────────────────────────────────────────────┤
+│ Recent default-branch   │ preferred │ pass    │ Last commit 2026-09-16, 5 days before capture (today 2026-09-21)   │
+│ commits                 │           │         │                                                                    │
+├─────────────────────────┼───────────┼─────────┼────────────────────────────────────────────────────────────────────┤
+│ Who is committing       │ preferred │ pass    │ All 5 recent commits by human user Aburke225, no bots              │
+├─────────────────────────┼───────────┼─────────┼────────────────────────────────────────────────────────────────────┤
+│ Issue response latency  │ required  │ pass    │ Last issue (#73) opened 2026-09-16 (within 180d); one sampled      │
+│                         │           │         │ maintainer response (#52, COLLABORATOR) took ~6 days               │
+├─────────────────────────┼───────────┼─────────┼────────────────────────────────────────────────────────────────────┤
+│ Maintainer activity in  │ preferred │ fail    │ Issue #70 has 0 comments                                           │
+│ this thread             │           │         │                                                                    │
+├─────────────────────────┼───────────┼─────────┼────────────────────────────────────────────────────────────────────┤
+│ Release recency         │ required  │ pass    │ No releases published (404) — conditional "if published" doesn't   │
+│                         │           │         │ apply                                                              │
+├─────────────────────────┼───────────┼─────────┼────────────────────────────────────────────────────────────────────┤
+│ Last push               │ preferred │ pass    │ Repo pushed_at 2026-09-16, 5 days before capture                   │
+├─────────────────────────┼───────────┼─────────┼────────────────────────────────────────────────────────────────────┤
+│ Archived flag           │ required  │ pass    │ archived: false                                                    │
+├─────────────────────────┼───────────┼─────────┼────────────────────────────────────────────────────────────────────┤
+│ Adoption scale          │ preferred │ fail    │ 1 star                                                             │
+├─────────────────────────┼───────────┼─────────┼────────────────────────────────────────────────────────────────────┤
+│ Issue availability      │ required  │ pass    │ state: open                                                        │
+├─────────────────────────┼───────────┼─────────┼────────────────────────────────────────────────────────────────────┤
+│ Newcomer friendly       │ preferred │ fail    │ Labels: bug, ingestion, tier-2 — no "good first issue"             │
+├─────────────────────────┼───────────┼─────────┼────────────────────────────────────────────────────────────────────┤
+│ Issue scope             │ required  │ pass    │ Single bounded bug (fixture indentation), no "Out of scope"        │
+│                         │           │         │ mention, not a tracking issue                                      │
+├─────────────────────────┼───────────┼─────────┼────────────────────────────────────────────────────────────────────┤
+│ Issue description       │ preferred │ pass    │ Names failing test, files involved, xfail annotation to remove,    │
+│                         │           │         │ effort estimate                                                    │
+├─────────────────────────┼───────────┼─────────┼────────────────────────────────────────────────────────────────────┤
+│ Non pure usage question │ required  │ pass    │ Bug report, not a support question                                 │
+├─────────────────────────┼───────────┼─────────┼────────────────────────────────────────────────────────────────────┤
+│ Age and history         │ preferred │ pass    │ Opened 2026-09-10, well within 2 years                             │
+├─────────────────────────┼───────────┼─────────┼────────────────────────────────────────────────────────────────────┤
+│ Assignee                │ preferred │ pass    │ No assignees                                                       │
+├─────────────────────────┼───────────┼─────────┼────────────────────────────────────────────────────────────────────┤
+│ Linked PRs              │ preferred │ pass    │ Search found 0 PRs referencing #70                                 │
+├─────────────────────────┼───────────┼─────────┼────────────────────────────────────────────────────────────────────┤
+│ Claim comments          │ required  │ pass    │ 0 comments — no claim comments exist                               │
+├─────────────────────────┼───────────┼─────────┼────────────────────────────────────────────────────────────────────┤
+│ Label freshness         │ preferred │ pass    │ Opened 11 days before capture, within 180 days                     │
+├─────────────────────────┼───────────┼─────────┼────────────────────────────────────────────────────────────────────┤
+│ Contribution policy     │ preferred │ pass    │ No CONTRIBUTING.md — silence passes                                │
+├─────────────────────────┼───────────┼─────────┼────────────────────────────────────────────────────────────────────┤
+│ Dedicated AI policy     │ preferred │ fail    │ No AI_POLICY.md/AGENTS.md found                                    │
+│ files                   │           │         │                                                                    │
+├─────────────────────────┼───────────┼─────────┼────────────────────────────────────────────────────────────────────┤
+│ Templates               │ preferred │ unclear │ Not checked (PR/issue template disclosure checkbox)                │
+└─────────────────────────┴───────────┴─────────┴────────────────────────────────────────────────────────────────────┘
+
+All required checks pass → accept.
+
 ```json
 {
-  "item": "https://github.com/codepath/pathreview-ai301-fa26-s1/issues/68",
+  "item": "https://github.com/codepath/pathreview-ai301-fa26-s1/issues/70",
   "checks": [
-    {"name": "Recent default-branch commits", "grade": "pass", "evidence": "last main commit 2026-08-24 (23 days ago, < 60)"},
-    {"name": "Who is committing", "grade": "pass", "evidence": "last 5 main commits all authored by Aburke225, not
-a [bot]"},
-    {"name": "Issue response latency", "grade": "pass", "evidence": "newest issue #72 opened 2026-09-10 (6 days
-ago); no issue has any comment, so no respole"},
-    {"name": "Maintainer activity in this thread", "grade": "fail", "evidence": "issue #68 has 0 comments; no
-Owner/Member/Collaborator reply"},
-    {"name": "Release recency", "grade": "pass", "evidence": "/releases returns [] — no release published,
-condition not triggered"},
-    {"name": "Last push", "grade": "pass", "evidence": "repo pushed_at 2026-09-10 (6 days ago, < 30)"},
-    {"name": "Archived flag", "grade": "pasived: false"},
-    {"name": "Adoption scale", "grade": "fail", "evidence": "stargazers_count: 0 (< 100)"},
-    {"name": "Issue availability", "grade":e state: open"},
-    {"name": "Newcomer friendly", "grade": "pass", "evidence": "labels: bug, good first issue, rag, tier-1"},
-    {"name": "Issue scope", "grade": "pass"in KeywordSearcher.search() naming 2 files,2-4h estimate; no sub-item list and no 'Out of scope'"},
-    {"name": "Issue description", "grade": s expected behavior ('should return an emptyresult list'), relevant files, and the xfail marker to remove"},
-    {"name": "Non pure usage question", "gr"reports a ZeroDivisionError crash and thefix required, not a how-do-I question"},
-    {"name": "Age and history", "grade": "p_at 2026-09-10, 6 days old (< 2 years)"},
-    {"name": "Asignee", "grade": "pass", "evidence": "assignees: []"},
-    {"name": "Linked PRs", "grade": "pass",s in the timeline and the repo has 0 PRstotal; only a 2026-09-16 'referenced' commit in classmate yulijasso's fork, which the Path Review house rule does
-not treat as a block"},
-    {"name": "Claim comments", "grade": "pass", "evidence": "comments: 0 on the thread"},
-    {"name": "Label freshness", "grade": "pirst issue' labeled 2026-09-10, 6 days ago (< 180)"},
-    {"name": "Contribution policy", "grade"s/CONTRIBUTING.md states no restriction onAI-assisted work; silence passes"},
-    {"name": "Dedicated AI policy files", ": "no AI_POLICY.md, AI_USAGE_POLICY.md, orAGENTS.md in the repo tree"},
-    {"name": "Templates", "grade": "fail", REQUEST_TEMPLATE.md checklist covers CI,tests, lint, typecheck and xfail removal — no AI-use disclosure box"}
+    {"name": "Recent default-branch commits", "grade": "pass", "evidence": "Last commit 2026-09-16, 5 days before capture"},
+    {"name": "Who is committing", "grade": "pass", "evidence": "All 5 recent commits by human author Aburke225, no bots"},
+    {"name": "Issue response latency", "grade": issue opened 2026-09-16 (within 180d); sampledmaintainer (COLLABORATOR) response on #52 took ~6 days"},
+    {"name": "Maintainer activity in this threaence": "Issue #70 has 0 comments"},
+    {"name": "Release recency", "grade": "pass", "evidence": "No releases published (404) — conditional pass"},
+    {"name": "Last push", "grade": "pass", "evi26-09-16, 5 days before capture"},
+    {"name": "Archived flag", "grade": "pass", "evidence": "archived: false"},
+    {"name": "Adoption scale", "grade": "fail",ount: 1"},
+    {"name": "Issue availability", "grade": "pass", "evidence": "state: open"},
+    {"name": "Newcomer friendly", "grade": "faie bug, ingestion, tier-2 — no good-first-issuelabel"},
+    {"name": "Issue scope", "grade": "pass", "efixture bug, no 'Out of scope' mention, not atracking issue"},
+    {"name": "Issue description", "grade": "pasling test, files involved, xfail annotation toremove, effort estimate 2-4h"},
+    {"name": "Non pure usage question", "grade" report describing a concrete defect, not asupport question"},
+    {"name": "Age and history", "grade": "pass"-09-10, within last 2 years"},
+    {"name": "Assignee", "grade": "pass", "evidence": "assignees: none"},
+    {"name": "Linked PRs", "grade": "pass", "evund 0 PRs referencing issue 70"},
+    {"name": "Claim comments", "grade": "pass", "evidence": "0 comments on the issue — no claim comments"},
+    {"name": "Label freshness", "grade": "pass"d 11 days before capture, within 180 days"},
+    {"name": "Contribution policy", "grade": "pass", "evidence": "No CONTRIBUTING.md found — silence passes per rubric
+guidance"},
+    {"name": "Dedicated AI policy files", "grade": "fail", "evidence": "No AI_POLICY.md or AGENTS.md found in repo"},
+    {"name": "Templates", "grade": "unclear", "ate AI-disclosure checkbox not checked"}
   ],
   "verdict": "accept"
 }
