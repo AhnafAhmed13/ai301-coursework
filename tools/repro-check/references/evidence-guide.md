@@ -30,7 +30,7 @@ looks like against the issue's stated target. -->
 
 | Signal | On github.com | In the eval bundle |
 |---|---|---|
-| Bug report template (repo standards) | repo > .github > ISSUE_TEMPLATE > bug_report.md (or something similar) > operating system, app, toolkit, etc versions | repo facts > bug reports > operating system, app, toolkit, etc versions |
+| Bug report template (repo standards) | repo > .github > ISSUE_TEMPLATE > bug_report.md (or something similar) > operating system, app, build, languages, toolkit, release, etc versions | repo facts > bug reports > operating system, app, build, languages, toolkit, release, etc versions |
 | Issue body (bug reporter) | In the issue's body > Environment section (or something similar) | Issue > Environment section (or something similar) |
 | Candidate (reproduction environment) | In the issue's comment threads OR linked PRs > reproduction environment description | Candidate claim comment OR Candidate repro report > reproduction environment description |
 
