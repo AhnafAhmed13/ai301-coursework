@@ -110,7 +110,7 @@ fields.
 only one run occurred. **The last score in your list must match the agreement line in the
 `eval-run.txt` you committed** — that file is the record of your final run.]
 
-> 19 19 18 19 20
+> 19 19 19 18 19
 
 **Package analysis**
 
