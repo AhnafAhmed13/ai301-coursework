@@ -8,9 +8,8 @@ format criteria grade exactly that. Your course repo link is the whole submissio
 files and no evidence uploads are part of Assignment 5.
 
 **Contribution Number:** [1]
-**Student:** [Student name]
-**GitHub Username:** [your GitHub username, exactly as it appears on your profile - no @, no
-profile URL. Your comments upstream are identified by this name.]
+**Student:** TF - Ahnaf Ahmed
+**GitHub Username:** AhnafAhmed13
 **Issue:** [GitHub issue link]
 **Pull Request:** [GitHub PR link, once opened]
 
@@ -59,6 +58,15 @@ one in the week it belongs to.
 
 [2-4 sentences: what you built (the scout, your strategy), what broke
 or fell short, what changed because of it.]
+
+```text
+**Toolkit**
+
+- Tool: issue-scout
+- What it produced: top 5 ranked issues based on my fit profile and search strategy
+- Difficulties: the search strategy was initially designed to prefer activity in the issue thread, but that made claude pick 5 issues that were already claimed
+- What changed: updated the strategy to prefer less activity (if not none) so the ranked issues would be unclaimed
+```
 
 **Unit 6: [one line on the tool work]**
 
