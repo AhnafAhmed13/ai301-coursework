@@ -10,7 +10,7 @@ files and no evidence uploads are part of Assignment 5.
 **Contribution Number:** [1]
 **Student:** TF - Ahnaf Ahmed
 **GitHub Username:** AhnafAhmed13
-**Issue:** [GitHub issue link]
+**Issue:** [GitHub issue link](https://github.com/ashrafee-dev/scamshield-api/issues/113)
 **Pull Request:** [GitHub PR link, once opened]
 
 One repository, built across units 5 to 8, telling the whole story of your real
@@ -74,6 +74,20 @@ or fell short, what changed because of it.]
 fell short, and what changed because of it. "Nothing broke" counts when
 it is true - say how you know.]
 
+```text
+**Toolkit**
+
+- Tool: issue-scout
+- What it produced: top 5 ranked issues based on my fit profile and search strategy
+- Difficulties: the issues were not up to standards according to the rubric
+- What changed: refined and fine-tuned rubrics and search strategy queries
+
+- Tool: voice-guard
+- What it produced: centralized all voice-guides in the skills directory under voice-guard to use as PreToolUse hook
+- Difficulties: N/A
+- What changed: N/A
+```
+
 **Unit 7: [one line on the tool work]**
 
 [2-4 sentences: the ship-gate and your gate manifest. What it produced
@@ -99,13 +113,32 @@ you it held up. **Record the link to your claim comment in this section too.**
 Not claimed yet? Write `claim pending` and today's date where the link goes,
 and add the link the moment your claim lands.]
 
+> I searched repeatedly for the right issues that match my fit profile. I had to
+  fine-tune most of my rubric and search strategy in order to get satisfactory
+  search results. My searches kept returning issues I was not interested in
+  or issues that the grader kept rejecting. Finaly I was able to find an issue
+  I was interested in after spending a lot of time refining my searches. And the
+  grader's verdict for this issue was "accept" and the difficulty was "straightforward".
+  The issue I selected is "Cover malformed JSON independently of text validation".
+  I selected this because it is written in python which I'm fairly proficient in. This
+  project also uses FastAPI which I'm interested to learn. Finally, this issue
+  focuses on JSON which I'm familiar with and hopefully can find a fix for it.
+  It is also labeled "good first issue", so the scope is not too broad and beginner friendly.
+  Since this is part of the weekly prep task, I won't be claiming the issue by posting
+  a claim comment. Instead, I will emulate the open source contribution workflow from week 6-8.
+
 **Toolkit**
 
-- Tool: issue-scout (your scout: your search strategy, your rubric),
-  and how you used it
-- What it produced: [the scan and its verdict on this issue, described]
-- Difficulties: [where it fell short, or "none met" if none did]
-- What changed: [what you patched or would update, or "nothing"]
+- Tool: issue-scout
+- What it produced:
+  - scamshield-api #113 (https://github.com/ashrafee-dev/scamshield-api/issues/113): add tests/roadmap/text/test_json_errors.py covering malformed JSON.
+  - Ranking signals: carries help wanted, 0 comments, opened by the Owner.
+  - The issue names the file, the acceptance criteria and the run commands.
+  - The repo has AGENTS.md, 52 stars, commits within 10 days, and a maintainer who replied to another issue on the same day.
+  - Difficulty: straightforward.
+  - I found no linked, open or merged PR for it.
+- Difficulties: none met
+- What changed: nothing
 
 ---
 
