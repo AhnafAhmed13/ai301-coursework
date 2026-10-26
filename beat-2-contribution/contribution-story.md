@@ -1,4 +1,5 @@
-# Contribution: [Issue Title]
+# Contribution: Cover malformed JSON independently of text validation
+
 
 Path: `beat-2-contribution/contribution-story.md`
 
@@ -93,6 +94,15 @@ it is true - say how you know.]
 [2-4 sentences: the ship-gate and your gate manifest. What it produced
 on your real branch, what fought you, what changed because of it.]
 
+```text
+**Toolkit**
+
+- Tool: ship-gate
+- What it produced: pr-precheck hook
+- Difficulties: I ran into some technical difficulties while running the install.py file because of having an older python version and not having my shell's path set up to the newer version.
+- What changed: I updated python and fixed the shell's path, and was able to run the install.py file afterward.
+```
+
 **Unit 8: [one line on the tool work]**
 
 [2-4 sentences: the PR-monitor and your playbook. What it read, what it
@@ -148,17 +158,28 @@ and add the link the moment your claim lands.]
 
 [In your own words, what is broken or missing?]
 
+The issue asks for adding tests to cover malformed JSON independently of text validation. This is not a bug-fix so nothing is broken.
+
 **Expected Behavior**
 
 [What should happen?]
+
+The tests should do the following:
+- Send truncated JSON and invalid encodings through TestClient
+- Assert controlled client errors and no provider calls
+- Document current FastAPI behavior without inventing a new envelope
 
 **Current Behavior**
 
 [What actually happens?]
 
+No tests exist to test that behavior currently.
+
 **Affected Components**
 
 [Which parts of the codebase are involved?]
+
+`tests/roadmap/text/test_json_errors.py`
 
 **Toolkit**
 
@@ -177,6 +198,13 @@ and add the link the moment your claim lands.]
 the relevant versions (language, runtime, package manager, the project
 itself), and how you set the project up. Then the challenges you faced
 and how you solved them, or that none came up.]
+
+OS: MacOS 27.0.1
+Release: v0.1.0
+Source audit: 9d8ac3e01df1
+Current main: bd8eb30
+
+Since this issue focuses on adding tests, there is no reproduction necessary.
 
 **Steps to Reproduce**
 
