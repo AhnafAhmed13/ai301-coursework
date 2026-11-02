@@ -108,6 +108,24 @@ on your real branch, what fought you, what changed because of it.]
 [2-4 sentences: the PR-monitor and your playbook. What it read, what it
 drafted, what you did with the draft.]
 
+```text
+**Toolkit**
+
+- Tool: pr-monitor
+- What it produced: a tool to monitor my pr state and suggest next move
+- Difficulties: none met
+- What changed: nothing
+```
+
+```text
+**Toolkit**
+
+- Tool: playbook
+- What it produced: a comprehensive guide describing pr states and communication rules and policies
+- Difficulties: none met
+- What changed: nothing
+```
+
 ---
 
 ## Why I Chose This Issue
@@ -204,7 +222,7 @@ Release: v0.1.0
 Source audit: 9d8ac3e01df1
 Current main: bd8eb30
 
-Since this issue focuses on adding tests, there is no reproduction necessary.
+> Since this issue focuses on adding tests, there is no reproduction necessary.
 
 **Steps to Reproduce**
 
@@ -241,11 +259,14 @@ to the files and functions involved.]
 [High-level description of your fix approach, and what you are
 deliberately NOT changing.]
 
+Add tests to deliberately use malformed JSON as input to see the current behavior and suggest fixes.
+
 **Implementation Plan**
 
-1. [Modify file X to do Y]
-2. [Add or change Z]
-3. [Update tests]
+> 1. Add a new test file called `test_json_errors.py` in `tests/roadmap/text/`
+> 2. Add a test to send truncated JSON and invalid encodings through TestClientt
+> 3. Assert controlled client errors and no provider calls
+> 4. Document current FastAPI behavior
 
 [Record deviations here as they happen: what changed mid-build and
 why. A recorded deviation is honest work; silent drift is not.]
@@ -298,6 +319,8 @@ built, decisions you made when you made them, wrong turns included.]
 ---
 
 ## Pull Request
+
+> No pull request opened since this is part of the TF weekly task and only emulating the actual student workflow
 
 **PR Link:** [GitHub PR URL when opened]
 
